@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="profile-form">
+		<h2>My Profile</h2>
+		<form action="process_profile.php" method="post">
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" min="1" max="120" required>
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" id="dob" required>
+			<label for="contact">Contact:</label>
+			<input type="text" name="contact" id="contact" placeholder="Phone or email" required>
+			<button type="submit" name="update-btn">Update Profile</button>
+		</form>
+	</div>
+</body>
+</html>
